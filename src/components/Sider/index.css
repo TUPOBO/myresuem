@@ -1,0 +1,10 @@
+/* .side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+.ant-card {
+	margin: 0 auto;
+	margin-top: 10px;
+}
