@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Layout, Row, Col } from 'antd'
 
-import './App.css'
 import SiderComponent from './components/Sider/SiderComponent'
+import About from './components/About'
+import './App.css'
 const { Header, Content, Footer, Sider } = Layout
 
 class App extends Component {
@@ -16,19 +17,13 @@ class App extends Component {
 						</Col>
 
 						<Col span={18}>
-							<Layout>
-								<Header />
-								<Content style={{ margin: '24px 16px 0' }}>
-									<div
-										style={{ padding: 24, background: '#fff', minHeight: 360 }}
-									>
-										content
-									</div>
-								</Content>
-								<Footer style={{ textAlign: 'center' }}>
-									Ant Design ©2018 Created by Ant UED
-								</Footer>
-							</Layout>
+							<About />
+							<Content>
+								<div>content</div>
+							</Content>
+							<Footer style={{ textAlign: 'center' }}>
+								Ant Design ©2018 Created by Ant UED
+							</Footer>
 						</Col>
 					</Row>
 				</div>

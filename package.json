@@ -5,6 +5,8 @@
 	"dependencies": {
 		"antd": "^3.10.7",
 		"babel-plugin-import": "^1.11.0",
+		"rc-animate": "^2.5.4",
+		"rc-texty": "^0.2.0",
 		"react": "^16.6.3",
 		"react-app-rewired": "^1.6.2",
 		"react-dom": "^16.6.3",
