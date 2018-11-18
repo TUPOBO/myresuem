@@ -13,7 +13,7 @@ class About extends Component {
 			<React.Fragment>
 				<Card title='个人简介' hoverable>
 					{info.map(item => (
-						<Card.Grid style={gridStyle}>
+						<Card.Grid style={gridStyle} key={item}>
 							<Texty type='flash'>{item}</Texty>
 						</Card.Grid>
 					))}

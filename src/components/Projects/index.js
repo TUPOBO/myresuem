@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, Divider, Icon, Avatar } from 'antd'
+import { Card, Divider, Icon } from 'antd'
 import { projects } from './projects'
 import './index.css'
 
@@ -12,10 +12,11 @@ class Projects extends Component {
 		return (
 			<Card title='实战项目'>
 				{projects.map(item => (
-					<React.Fragment>
+					<React.Fragment key={item.title}>
 						<Divider>{item.title}</Divider>
 						{item.details.map(item => (
 							<Card
+								key={item.id}
 								hoverable
 								title={
 									<div>

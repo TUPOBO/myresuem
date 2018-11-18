@@ -5,7 +5,7 @@ import SiderComponent from './components/Sider/SiderComponent'
 import About from './components/About'
 import Projects from './components/Projects'
 import './App.css'
-const { Content, Footer } = Layout
+const { Content } = Layout
 
 class App extends Component {
 	render() {
@@ -23,9 +23,6 @@ class App extends Component {
 							<Content>
 								<Projects />
 							</Content>
-							<Footer style={{ textAlign: 'center' }}>
-								Ant Design ©2018 Created by Ant UED
-							</Footer>
 						</Col>
 					</Row>
 				</div>

@@ -18,17 +18,17 @@ class SiderComponent extends Component {
 						cover={<img src='/images/me.jpg' alt='me' />}
 						actions={[
 							<Tooltip title='GitHub'>
-								<a href='https://baidu.com'>
+								<a href='https://github.com/TUPOBO'>
 									<Icon type='github' />
 								</a>
 							</Tooltip>,
 							<Tooltip title='CodePen'>
-								<a href='https://baidu.com'>
+								<a href='https://codepen.io/tupobo/'>
 									<Icon type='codepen' />
 								</a>
 							</Tooltip>,
 							<Tooltip title='Blog'>
-								<a href='https://baidu.com'>
+								<a href='https://TUPOBO.github.io'>
 									<Icon type='book' />
 								</a>
 							</Tooltip>
@@ -40,11 +40,11 @@ class SiderComponent extends Component {
 
 				<Card hoverable title='开发技能' style={{ width: '80%' }}>
 					{skills.map(item => (
-						<React.Fragment>
+						<React.Fragment key={item.title}>
 							<Divider>{item.title}</Divider>
 							<Timeline>
 								{item.details.map(item => (
-									<Timeline.Item color={item.color}>
+									<Timeline.Item color={item.color} key={item.title}>
 										<React.Fragment>
 											<span>
 												{item.title} - {item.extra}
